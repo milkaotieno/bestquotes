@@ -10,9 +10,9 @@ import { Bestquotes } from '../bestquotes';
 export class QuotesComponent implements OnInit {
 
   quotes: Bestquotes[] = [ 
-    new Bestquotes("\"Peace begins with a smile.\"", "Author: Mother Teresa", new Date(2022,2,7), "Created_by: Milka", 0, 0),
-    new Bestquotes("\"When you don't have anything, then you have everything.\"", "Author: Mother Teresa", new Date(2001001), "Created_by: Motieno", 0, 0),
-    new Bestquotes("\"The only true wisdom is in knowing you know nothing.\"", "Author: Socrates", new Date(20170908), "Created_by: Milka", 0, 0)
+    new Bestquotes("\"Peace begins with a smile.\"", "Author: Mother Teresa", new Date(2022,2,7),'',0,0),
+    new Bestquotes("\"When you don't have anything, then you have everything.\"", "Author: Mother Teresa", new Date(2001,10,1), "", 0, 0),
+    new Bestquotes("\"The only true wisdom is in knowing you know nothing.\"", "Author: Socrates", new Date(2017,9,8), "", 0, 0)
   ];
   addNewBestquotes(bestquotes:any){
     let goalLength = this.quotes.length;
