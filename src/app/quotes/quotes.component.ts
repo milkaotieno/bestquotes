@@ -10,15 +10,16 @@ import { Bestquotes } from '../bestquotes';
 export class QuotesComponent implements OnInit {
 
   quotes: Bestquotes[] = [ 
-    new Bestquotes("Peace begins with a smile", "Mother Teresa", new Date(20220207), "Milka", 0, 0),
-    new Bestquotes("When you don't have anything, then you have everything.", "Mother Teresa", new Date(2001001), "Motieno", 0, 0),
-    new Bestquotes("The only true wisdom is in knowing you know nothing.", "Socrates", new Date(20170908), "Milka", 0, 0)
+    new Bestquotes("\"Peace begins with a smile.\"", "Author: Mother Teresa", new Date(20220207), "Created_by: Milka", 0, 0),
+    new Bestquotes("\"When you don't have anything, then you have everything.\"", "Author: Mother Teresa", new Date(2001001), "Created_by: Motieno", 0, 0),
+    new Bestquotes("\"The only true wisdom is in knowing you know nothing.\"", "Author: Socrates", new Date(20170908), "Created_by: Milka", 0, 0)
   ];
   addNewBestquotes(bestquotes:any){
     let goalLength = this.quotes.length;
     bestquotes.id = bestquotes.Length+1;
     bestquotes.Date = new Date(bestquotes.Date)
     this.quotes.push(bestquotes)
+    alert("Thanks for your contribution.Kudos!")
   }
 deleteQuote(toDelete:boolean, index:number){
   if(toDelete){
