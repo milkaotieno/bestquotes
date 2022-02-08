@@ -2,8 +2,11 @@
     <li *ngFor="let quote of quotes">
         {{quote.quote}}
         <app-quote-details [quotes]="quote"></app-quote-details>
+       
     </li>
+    
 
 </ol>
+
 
 <app-quote-form></app-quote-form>
