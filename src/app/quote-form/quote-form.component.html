@@ -1,0 +1,28 @@
+<div class="modal-header">
+    <h4 class="modal-title">Add a quote</h4>
+    <button type="button" class="close" aria-label="Close" (click)="activeModal.dismiss('Cross click')">
+    </button>
+  </div>
+  <form [formGroup]="myForm" (ngSubmit)="submitForm()">
+    <div class="modal-boy">
+      <div class="container">
+        <div class="form-group">
+          <label for="description">Quote</label>
+          <textarea class="form-control" formControlName="quote" id="description" rows="4" required></textarea>
+        </div>
+        <div class="form-group">
+          <label for="name">Author</label>
+          <input type="text" required formControlName="author" class="form-control" id="name">
+        </div>
+        <div class="form-group">
+          <label for="name">Created by</label>
+          <input type="text" required class="form-control" formControlName="addedBy"  id="name">
+        </div>
+      </div>
+    </div>
+    <div class="modal-footer">
+      <button class="btn btn-success" [disabled]="!myForm.valid">
+        Submit Form
+      </button>
+    </div>
+  </form>
