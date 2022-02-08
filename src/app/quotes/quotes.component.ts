@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Bestquotes } from '../bestquotes';
 
 @Component({
   selector: 'app-quotes',
@@ -6,6 +7,13 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./quotes.component.css']
 })
 export class QuotesComponent implements OnInit {
+
+  quotes: Bestquotes[] = [ 
+    new Bestquotes("Peace begins with a smile", "Mother Teresa", new Date(20220207), "Milka", 0, 0),
+    new Bestquotes("When you don't have anything, then you have everything.", "Mother Teresa", new Date(2001001), "Motieno", 0, 0),
+    new Bestquotes("The only true wisdom is in knowing you know nothing.", "Socrates", new Date(20170908), "Milka", 0, 0)
+  ]
+
 
   constructor() { }
 
