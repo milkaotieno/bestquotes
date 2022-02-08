@@ -5,9 +5,17 @@
    width: 120px;
    font-weight: bold;
    border-radius:20px 20px 0px 20px;
-   margin-bottom: 5em;
+   margin-bottom: 3em;
   }
 
   #liked {
       display: flex;
+      gap: 15em;
+      line-height: normal;
+  }
+
+  * {
+      font-stretch: semi-expanded;
+      flex-wrap: content '\f30b';
+      line-height: 2em;
   }

@@ -7,8 +7,9 @@
     line-height: 5em;  
     }
 
-#quotetitle p {
-    margin-right:5em ;
+p {
+    margin-right:25em ;
+    margin-left: 15em;
     line-height: normal;
 }
 * {
