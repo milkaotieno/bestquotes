@@ -22,12 +22,12 @@
         </div>
         <div class="form-group">
   
-            <label for="complete">Date Created</label>
+            <label for="complete">Date Created</label><br><br>
             <input type='date' id="complete" [(ngModel)]="newBestquote.date" name="Date" #Date="ngModel" required>
             <div [hidden]="Date.valid || Date.pristine" class="alert alert-danger">
               <p>Date is required</p>
-            </div>
+            </div><br><br>
         </div>
-        <button type="submit" class="btn btn-success">Add Your Quote</button>
+        <button type="submit" class="btn btn-success">ADD</button>
     </form>
-  </div>
+  </div><hr><hr>
