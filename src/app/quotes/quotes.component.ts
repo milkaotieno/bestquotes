@@ -14,10 +14,12 @@ export class QuotesComponent implements OnInit {
     new Bestquotes("When you don't have anything, then you have everything.", "Mother Teresa", new Date(2001001), "Motieno", 0, 0),
     new Bestquotes("The only true wisdom is in knowing you know nothing.", "Socrates", new Date(20170908), "Milka", 0, 0)
   ];
-addnewBestquotes(quote:any){
-
-}
-
+  addNewBestquotes(bestquotes:any){
+    let goalLength = this.quotes.length;
+    bestquotes.id = bestquotes.Length+1;
+    bestquotes.Date = new Date(bestquotes.Date)
+    this.quotes.push(bestquotes)
+  }
 deleteQuote(toDelete:boolean, index:number){
   if(toDelete){
     let trashQuote = confirm(`Do you sure you want to delete '${this.quotes[index].quote}' quote?`) 

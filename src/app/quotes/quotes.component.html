@@ -1,12 +1,11 @@
-<ol>
-    <li *ngFor="let quote of quotes">
+
+<div>
+    <ol>
+    <li *ngFor="let quote of quotes; let i=index">
         {{quote.quote}}
-        <app-quote-details [quotes]="quote"></app-quote-details>
-       
-    </li>
-    
-
+        <app-quote-details [quotes]="quote" (delete)="deleteQuote($event, i)"></app-quote-details>       
+    </li>   
 </ol>
+<app-quote-form (addBestquote)="addNewBestquotes($event)" ></app-quote-form>
 
-
-<app-quote-form (addBestquote)="addnewBestquotes($event)" ></app-quote-form>
+</div>
