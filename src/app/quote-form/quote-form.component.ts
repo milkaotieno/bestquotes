@@ -10,7 +10,7 @@ import { Bestquotes } from '../bestquotes';
 export class QuoteFormComponent implements OnInit {
 
   
-  newBestquote = new Bestquotes("","", new Date(), " ", 0, 0);
+  newBestquote = new Bestquotes("","", new Date(), "", 0, 0);
 @Output() addBestquote = new EventEmitter<Bestquotes>();
 
   submitBestquote(){
