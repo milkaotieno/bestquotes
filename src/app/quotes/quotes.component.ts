@@ -14,9 +14,20 @@ export class QuotesComponent implements OnInit {
     new Bestquotes("When you don't have anything, then you have everything.", "Mother Teresa", new Date(2001001), "Motieno", 0, 0),
     new Bestquotes("The only true wisdom is in knowing you know nothing.", "Socrates", new Date(20170908), "Milka", 0, 0)
   ];
-submitBestquote(Bestquotes:any){
-  Bestquotes.author = new Bestquotes().author
+addnewBestquotes(quote:any){
+
 }
+
+deleteQuote(toDelete:boolean, index:number){
+  if(toDelete){
+    let trashQuote = confirm(`Do you sure you want to delete '${this.quotes[index].quote}' quote?`) 
+
+    if(trashQuote){
+     this.quotes.splice(index, 1)
+    }
+  }
+}
+
 
 
   constructor() { }

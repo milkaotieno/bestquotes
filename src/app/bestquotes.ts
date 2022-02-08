@@ -1,5 +1,5 @@
 export class Bestquotes {
-    constructor (public quote: string, public author: string, public date: Date, public createdBy: string, public upvotes: number = 0, public downvotes: number = 0) {
+    constructor (public quote: string, public author: string, public date: Date, public createdBy: string, public upvotes: number = 0, public downvotes: number = 0,) {
         // this.quote = quote;
         // this.author = author;
         // this.date = date;
@@ -8,6 +8,7 @@ export class Bestquotes {
         // this.downvotes = downvotes;
     }
     public popular: boolean = false;
+
 
 }
 //quote, author, date
