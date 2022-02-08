@@ -11,10 +11,10 @@ export class QuoteFormComponent implements OnInit {
 
   
   newBestquote = new Bestquotes("","", new Date(), " ", 0, 0);
-@Output() addGoal = new EventEmitter<Bestquotes>();
+@Output() addBestquote = new EventEmitter<Bestquotes>();
 
-  submitGoal(){
-this.addGoal.emit(this.newBestquote);
+  submitBestquote(){
+this.addBestquote.emit(this.newBestquote);
   }
 
   constructor() { }
