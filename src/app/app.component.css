@@ -1,4 +1,17 @@
 #quotetitle {
     align-items: center;
-    
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-style: italic;
+    color: #198754;
+    font-weight: fa-the-large;
+    line-height: 5em;  
+    }
+
+#quotetitle p {
+    margin-right:5em ;
+    line-height: normal;
+}
+* {
+    margin-left: 8em;
+
 }
