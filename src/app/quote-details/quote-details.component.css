@@ -8,15 +8,15 @@
    margin-bottom: 3em;
   }
 
-  #liked {
+  .author {
       display: flex;
-      gap: 15em;
+      gap: 10em;
       line-height: normal;
   }
 
   * {
       font-stretch: semi-expanded;
-      flex-wrap: content '\f30b';
+      /*flex-wrap: content '\f30b';*/
       line-height: 2em;
   }
 

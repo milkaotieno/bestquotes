@@ -3,15 +3,15 @@
     crossorigin="anonymous" referrerpolicy="no-referrer">
 
   <div id="liked">
-    <div>
+    <div class="author">
       <p>Author: {{ quotes.author }}</p>
-      <div>
+      <div class="row">
         <div class="col-sm-4">
           <button class="btn btn-sm like" id="success" (click)='upCounter()'>{{quotes.upvotes}} <i
               class="fa fa-thumbs-up" id="like"></i></button>
         </div>
         <div class="col-sm-4">
-          <button class="btn btn-sm hate" id="hate" (click)='upCounter()'>{{quotes.downvotes}} <i
+          <button class="btn btn-sm hate" id="hate" (click)='downCounter()'>{{quotes.downvotes}} <i
               class="fa fa-thumbs-down" id="dislike"></i></button>
         </div>
       </div>
@@ -22,13 +22,8 @@
       <p> {{quotes.date|timeAgo}} Days from the time it was submitted</p>
       <p>~Submitted/added by {{ quotes.createdBy }}</p>
     </div>
-
-    <!-- <p>{{quotes.upvotes}}</p>
-    <p>{{quotes.downvotes}}</p> -->
+    
   </div>
 </div>
-<!-- <span class="text-muted"> {{quotes.date | timeAgo}}<br>
-    <p>{{quotes.createdBy}}</span>
-      -->
 <button class="delbut" (click)="deleteQuote(true)">Delete Quote </button>
 

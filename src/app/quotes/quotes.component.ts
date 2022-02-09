@@ -10,11 +10,11 @@ import { Bestquotes } from '../bestquotes';
 export class QuotesComponent implements OnInit {
 
   quotes: Bestquotes[] = [ 
-    new Bestquotes("\"Peace begins with a smile.\"", "Author: Mother Teresa", new Date(2022,2,7),"Motieno",0,0),
-    new Bestquotes("\"When you don't have anything, then you have everything.\"", "Author: Mother Teresa", new Date(2001,10,1), "Milka", 0, 0),
+    new Bestquotes("\"Peace begins with a smile.\"", "Mother Teresa", new Date(2022,2,7),"Motieno",0,0),
+    new Bestquotes("\"When you don't have anything, then you have everything.\"", "Mother Teresa", new Date(2001,10,1), "Milka", 0, 0),
     new Bestquotes( "\"Read, read, read. Read everything trash, classics, good and bad, and see how they do it. Just like a carpenter who works as an apprentice and \
     studies the master. Read! You'll absorb it. Then write. If it's good, you'll find out. If it's not, throw it out of the window.\"",
-    "William Faulkner", new Date(2001,10,1), "", 0, 0), 
+    "William Faulkner", new Date(2001,10,1), "Junior", 0, 0), 
     new Bestquotes("\"The only true wisdom is in knowing you know nothing.\"", "Author: Socrates", new Date(2017,9,8), "Motieno", 0, 0)
   ];
   
