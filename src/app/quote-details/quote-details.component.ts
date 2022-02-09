@@ -10,9 +10,19 @@ export class QuoteDetailsComponent implements OnInit {
 
   @Input() quotes!: Bestquotes;
   @Output() delete = new EventEmitter<boolean>() 
+  Bestquotes: any;
 
   deleteQuote(todelete:boolean){
     this.delete.emit(todelete);
+  }
+
+  
+  upCounter(){
+    this.quotes.upvotes+=1;
+  }
+
+  downCounter(){
+    this.quotes.downvotes+=1;
   }
   constructor() { }
 

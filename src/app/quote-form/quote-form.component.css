@@ -6,7 +6,12 @@ label {
 * {
     font-size: large;
     font-style:oblique;
+    align-content: center;
+    align-items: center;
+    margin-right: 5em;
 }
-
+.form-group{
+    margin-right: 5em;
+}
 
     
