@@ -19,3 +19,19 @@
       flex-wrap: content '\f30b';
       line-height: 2em;
   }
+
+  .vote {
+    margin-left: 1em;
+    user-select: none;
+  }
+  
+  .vote:hover {
+    cursor: pointer;
+  }
+  img {
+      height: 3em;
+      width: 3em;
+  }
+  
+
+  
