@@ -1,7 +1,6 @@
 export class Bestquotes {
-    map(arg0: (Bestquotes: any) => any) {
-      throw new Error('Method not implemented.');
-    }
+
+    public popular: boolean = false;
     constructor (public quote: string, public author: string, public date: Date,public createdBy: string, public upvotes: number = 0, public downvotes: number = 0) {
         // this.quote = quote;
         // this.author = author;
@@ -9,17 +8,18 @@ export class Bestquotes {
         // this.createdBy = createdBy;
         // this.upvotes = upvotes;
         // this.downvotes = downvotes;
+        {
+            this.popular = false;
+        }
     }
-    public popular: boolean = false;
+    //public popular: boolean = false;
     public showDescription:boolean= false;
     
 }
-export class Quote {
-    showDescription:boolean;
-    constructor(public id:number, public name:string, public quotetitle:string, public quoteBody:string, public Author:string, public quoteDate:Date, public upCount:number, public downCount:number)
-    {
-        this.showDescription=false;
-    }
-}
+
+
 
 //quote, author, date
+// map(arg0: (Bestquotes: any) => any) {
+//     throw new Error('Method not implemented.');
+//   }

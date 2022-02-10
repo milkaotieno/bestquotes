@@ -2,7 +2,7 @@
 <div class="container-fluid">
     <ol>
     <li *ngFor="let quote of quotes; let i=index">
-        {{quote.quote}}
+        <p>"{{quote.quote}}"</p>
         <app-quote-details [quotes]="quote" (delete)="deleteQuote($event, i)"></app-quote-details>       
     </li>   
 </ol>
