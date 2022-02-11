@@ -2,6 +2,7 @@
 import { Component, OnInit, Output } from '@angular/core';
 import { Bestquotes } from '../bestquotes';
 
+
 @Component({
   selector: 'app-quotes',
   templateUrl: './quotes.component.html',
@@ -24,9 +25,10 @@ export class QuotesComponent implements OnInit {
     bestquotes.id = bestquotes.Length+1;
     bestquotes.Date = new Date(bestquotes.Date)
     this.quotes.push(bestquotes)
-    alert('Thanks for your contribution')
+    alert('Thanks for your contribution')   
    
   }
+  
 deleteQuote(toDelete:boolean, index:number){
   if(toDelete){
     let trashQuote = confirm(`Do you want to delete '${this.quotes[index].quote}' quote?`) 
@@ -36,8 +38,6 @@ deleteQuote(toDelete:boolean, index:number){
     }
   }
 }
-
-
 
   constructor() { }
 

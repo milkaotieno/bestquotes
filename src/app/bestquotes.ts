@@ -1,3 +1,6 @@
+import { FormGroup } from "@angular/forms";
+import { FormsModule } from "@angular/forms";
+
 export class Bestquotes {
 
     public popular: boolean = false;
@@ -11,6 +14,9 @@ export class Bestquotes {
         {
             this.popular = false;
         }
+        
+         //this.popular.reset();
+        
     }
     //public popular: boolean = false;
     public showDescription:boolean= false;
