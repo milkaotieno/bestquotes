@@ -11,7 +11,7 @@ import { Bestquotes } from '../bestquotes';
 export class QuotesComponent implements OnInit {
 
   quotes: Bestquotes[] = [ 
-    new Bestquotes("When something is free you are the product.", "Golden Management", new Date(2022,2,7),"Motieno",0,0),
+    new Bestquotes("When something is free you are the product.", "Golden Management", new Date(2022,2,7, 3,30),"Motieno",0,0),
     new Bestquotes("Peace begins with a smile.", "Mother Teresa", new Date(2022,2,7),"Motieno",0,0),
     new Bestquotes("When you don't have anything, then you have everything.", "Mother Teresa", new Date(2001,10,1), "Milka", 0, 0),
     new Bestquotes( "Read, read, read. Read everything trash, classics, good and bad, and see how they do it. Just like a carpenter who works as an apprentice and \

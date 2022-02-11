@@ -19,7 +19,8 @@
 
 
     <div class="">
-      <p> {{quotes.date|timeAgo}} Days from the time it was submitted</p>
+      <p> {{quotes.date|timeAgo}} </p>
+      <p> {{quotes.date|date:"short"}} </p>
       <p>~Submitted/added by {{ quotes.createdBy }}</p>
     </div>
     
